@@ -3,7 +3,7 @@ Description=gitea
 After=network-online.target
 
 [Container]
-Image=docker.io/gitea/gitea
+Image=docker.io/gitea/gitea:latest
 ContainerName=gitea
 AutoUpdate=registry
 PublishPort=3000:3000

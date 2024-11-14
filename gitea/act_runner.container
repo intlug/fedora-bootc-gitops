@@ -7,9 +7,9 @@ Image=docker.io/gitea/act_runner:nightly
 ContainerName=act_runner
 AutoUpdate=registry
 AddDevice=/dev/fuse
-Environment=GITEA_INSTANCE_URL=https://REPLACE_WITH_GITEA_HOST 
+Environment=GITEA_INSTANCE_URL=[gitea_url]
 Environment=CONFIG_FILE=/config.yaml 
-Environment=GITEA_RUNNER_REGISTRATION_TOKEN=ADD_TOKEN
+Environment=GITEA_RUNNER_REGISTRATION_TOKEN=[TOKEN]
 SeccompProfile=unconfined
 SecurityLabelDisable=true
 Volume=/etc/config.yaml:/config.yaml
