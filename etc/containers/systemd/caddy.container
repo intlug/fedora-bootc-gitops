@@ -1,0 +1,18 @@
+[Unit]
+Description=Caddy Quadlet
+After=network-online.target
+
+[Container]
+Image=docker.io/library/caddy:latest
+ContainerName=caddy
+AutoUpdate=registry
+PublishPort=80:80
+PublishPort=443:443
+Network=host
+
+[Service]
+Restart=always
+TimeoutStartSec=900
+
+[Install]
+WantedBy=multi-user.target default.target
