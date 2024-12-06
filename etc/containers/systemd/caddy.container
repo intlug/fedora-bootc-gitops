@@ -8,6 +8,7 @@ ContainerName=caddy
 AutoUpdate=registry
 PublishPort=80:80
 PublishPort=443:443
+PublishPort=9090:8080
 Network=host
 
 [Service]
