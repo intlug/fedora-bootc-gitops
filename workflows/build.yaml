@@ -16,8 +16,8 @@ jobs:
     #change ubuntu-latest to runner if using the included gitea configs
     runs-on: ubuntu-latest 
     env:
-      IMAGE_NAME: bootc-example
-      REGISTRY: ghcr.io/[USERNAME]
+      IMAGE_NAME: bootc-demo1
+      REGISTRY: ghcr.io/intlug
    
     steps:
       - name: Clone the repository

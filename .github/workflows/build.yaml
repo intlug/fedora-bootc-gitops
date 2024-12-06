@@ -19,6 +19,12 @@ jobs:
       IMAGE_NAME: bootc-demo1
       REGISTRY: ghcr.io/intlug
    
+    permissions:
+      contents: read
+      packages: write
+      attestations: write
+      id-token: write
+
     steps:
       - name: Clone the repository
         uses: actions/checkout@v4
